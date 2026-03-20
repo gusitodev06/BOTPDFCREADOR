@@ -8,7 +8,8 @@ Un bot potente y minimalista desarrollado en **Python** que transforma tus ráfa
 
 * 🚀 **Conversión Instantánea:** Envía tus fotos y recibe el PDF al momento.
 * 📦 **Soporte Multi-imagen:** Agrupa varias fotos en un solo archivo PDF.
-* 🖼️ **Alta Calidad:** Mantiene la resolución original de tus capturas.
+* 🖼️ **Alta Calidad:** Mantiene la resolución original de tus PDF.
+* 🖼️ **Calidad estandar:** Comprime imagenes de mas de 3mb de tamaño.
 * 🛠️ **Procesamiento Ligero:** Optimizado para no consumir recursos excesivos en el servidor.
 * 🤖 **Interfaz Simple:** Comandos intuitivos para una experiencia de usuario fluida.
 
@@ -17,9 +18,7 @@ Un bot potente y minimalista desarrollado en **Python** que transforma tus ráfa
 ## 🛠️ Stack Tecnológico
 
 * **Lenguaje:** [Python 3.10+](https://www.python.org/)
-* **Librería de Bot:** `python-telegram-bot`
-* **Manejo de Imágenes:** `Pillow`
-* **Generación de PDF:** `img2pdf`
+* **Librerías de Bot:** `python-telegram-bot` `img2pdf` `Pillow pypdf` `httpx`
 
 ---
 
@@ -42,11 +41,11 @@ source venv/bin/activate  # En Windows usa: venv\Scripts\activate
 ```
 ### 3. Instalar dependencias
 ```bash
-pip install python-telegram-bot Pillow img2pdf python-dotenv
+pip install python-telegram-bot Pillow img2pdf python-dotenv pypdf httpx
 ```
 ### 4.Ejecuta el bot
 ```bash
-python bot.py
+python app.py
 ```
 ###📖 Modo de Uso.
 
