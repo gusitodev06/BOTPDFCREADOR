@@ -28,8 +28,8 @@ Sigue estos pasos para tener tu propio bot funcionando en minutos:
 
 ### 1. Clonar el repositorio
 ```bash
-git clone [https://github.com/tu-usuario/nombre-del-repo.git](https://github.com/tu-usuario/nombre-del-repo.git)
-cd nombre-del-repo
+git clone https://github.com/gusitodev06/BOTPDFCREADOR.git
+cd BOTPDFCREADOR
 ```
 
 ###2. Configurar el entorno virtual (Recomendado)
