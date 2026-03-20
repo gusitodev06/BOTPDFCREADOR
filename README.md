@@ -1,61 +1,65 @@
-# BOTPDFCREADOR
+# 📸 PDF CREATOR Telegram Bot 📄
 
+Un bot potente y minimalista desarrollado en **Python** que transforma tus ráfagas de fotos en documentos PDF organizados en segundos. Ideal para digitalizar apuntes, facturas o documentos rápidamente desde el móvil.
 
-📄 Image2PDF Telegram Bot
+---
 
-Este es un bot de Python diseñado para simplificar la creación de archivos PDF a partir de imágenes. El flujo es sencillo: envías las fotos al bot y este las procesa, las organiza y te devuelve un documento PDF listo para descargar.
-✨ Características
+## ✨ Características Principales
 
-    Conversión Directa: Transforma imágenes (JPG, PNG, JPEG) en documentos PDF de alta calidad.
+* 🚀 **Conversión Instantánea:** Envía tus fotos y recibe el PDF al momento.
+* 📦 **Soporte Multi-imagen:** Agrupa varias fotos en un solo archivo PDF.
+* 🖼️ **Alta Calidad:** Mantiene la resolución original de tus capturas.
+* 🛠️ **Procesamiento Ligero:** Optimizado para no consumir recursos excesivos en el servidor.
+* 🤖 **Interfaz Simple:** Comandos intuitivos para una experiencia de usuario fluida.
 
-    Soporte Multi-foto: Envía varias imágenes y el bot las agrupará en un solo archivo.
+---
 
-    Procesamiento Eficiente: Utiliza librerías optimizadas para manejar el redimensionado y la compresión de imágenes.
+## 🛠️ Stack Tecnológico
 
-    Interfaz Intuitiva: Comandos sencillos para iniciar, finalizar el documento o cancelar la operación.
+* **Lenguaje:** [Python 3.10+](https://www.python.org/)
+* **Librería de Bot:** `python-telegram-bot`
+* **Manejo de Imágenes:** `Pillow`
+* **Generación de PDF:** `img2pdf`
 
-🛠️ Tecnologías utilizadas
+---
 
-    Lenguaje: Python 3.x
+## 🚀 Instalación y Despliegue
 
-    Librería de Bot: python-telegram-bot (o la que estés usando, ej. telebot)
+Sigue estos pasos para tener tu propio bot funcionando en minutos:
 
-    Manejo de Imágenes: Pillow (PIL)
-
-    Generación de PDF: img2pdf o FPDF
-
-🚀 Instalación y Configuración
-
-    Clona el repositorio:
-
-    Bash
-
-git clone https://github.com/tu-usuario/nombre-del-repo.git
+### 1. Clonar el repositorio
+```bash
+git clone [https://github.com/tu-usuario/nombre-del-repo.git](https://github.com/tu-usuario/nombre-del-repo.git)
 cd nombre-del-repo
+```
 
-Instala las dependencias:
-Bash
+###2. Configurar el entorno virtual (Recomendado)
+```bash
+python3 -m venv venv
+```
+```bash
+source venv/bin/activate  # En Windows usa: venv\Scripts\activate
+```
+### 3. Instalar dependencias
+```bash
+pip install python-telegram-bot Pillow img2pdf python-dotenv
+```
+### 4.Ejecuta el bot
+```bash
+python bot.py
+```
+###📖 Modo de Uso.
 
-pip install -r requirements.txt
+Inicia el bot: Envía el comando /start.
 
-    Configura tu Token:
-    Crea un archivo .env o modifica el script principal con el API Token proporcionado por @BotFather.
+Envía tus fotos: Puedes enviarlas una por una o como un álbum (asegúrate de enviarlas como "Foto" para previsualización o "Archivo").
 
-    Ejecuta el bot:
-    Bash
+Genera el PDF: Usa el comando /done (o el que hayas configurado) para finalizar la carga.
 
-    python bot.py
+Recibe tu archivo: El bot procesará las imágenes y te enviará el documento PDF listo para descargar.
 
-📖 Modo de Uso
+### 🛡️Licencia
+Este proyecto está bajo la Licencia MIT. Siéntete libre de usarlo, modificarlo y compartirlo.
 
-    Inicia el bot con el comando /start.
+Desarrollado con ⚡ por gusdev
 
-    Envía las imágenes que deseas incluir en el PDF (puedes enviarlas como "Foto" o como "Archivo").
-
-    Una vez enviadas todas, usa el comando /convertir (o el que hayas programado).
-
-    ¡Recibe tu archivo PDF en segundos!
-
-🛡️ Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
